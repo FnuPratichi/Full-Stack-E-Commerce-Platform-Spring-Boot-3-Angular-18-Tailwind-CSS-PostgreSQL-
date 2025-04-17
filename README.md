@@ -1,35 +1,32 @@
-# Ecommerce platform (fullstack project) Spring boot 3, Angular 18, Tailwind CSS, PostgreSQL, Kinde (2024)
-
-Monorepo of the Ecommerce platform app.
-
-[Video tutorial](https://youtu.be/4npG3sAMT5I)
-
-### Key Features:
-- 🛠️ Admin panel for products and categories 
-- 🔍✨ Filter engine
-- 🌐⚡ Angular SSR 
-- 💳 Stripe integration
-- 🏢 Hexagonal architecture (Backend)
+# This is a full-stack eCommerce platform project, built using the latest technologies. It’s a monorepo setup using Spring Boot 3 for the backend and Angular 18 with Tailwind CSS for the frontend, backed by PostgreSQL and integrated with Stripe for payments. Auth is managed with Kinde.
 
 
-## Usage
-### Prerequisites
-- [NodeJS 20.17 LTS](https://nodejs.org/dist/v20.17.0/node-v20.17.0.pkg)
-- [Angular CLI v18](https://www.npmjs.com/package/@angular/cli)
-- IDE ([VSCode](https://code.visualstudio.com/download), [IntelliJ](https://www.jetbrains.com/idea/download/))
-- [JDK 21](https://adoptium.net/temurin/releases/)
-- Docker ([Docker Desktop](https://docs.docker.com/engine/install/))
+- Key Features:
+🛠️ Powerful Admin Panel (Manage Products & Categories)
+🔍✨ Dynamic Filter Engine
+🌐⚡ Server-Side Rendering with Angular SSR
+💳 Seamless Stripe Integration
+🧱 Backend uses Hexagonal (Ports & Adapters) Architecture
 
-### Fetch dependencies
-``npm install``
+Project Setup
+🔧 Prerequisites
+ - Node.js v20.17 LTS
+ - Angular CLI v18
+ - An IDE (e.g., VSCode or IntelliJ IDEA)
+ - JDK 21+
+ - Docker Desktop
 
-You will need to create an .env file at the root of the ecom-backend folder with the following values :
+Create a .env file inside the ecom-backend/ directory with the following variables:
+Copy code
 
 ````
-KINDE_CLIENT_ID=<client-id>
-KINDE_CLIENT_SECRET=<client-secret>
-STRIPE_API_KEY=<stripe-api-key>
-STRIPE_WEBHOOK_SECRET=<stripe-webhook-secret>
+KINDE_CLIENT_ID=your-client-id
+KINDE_CLIENT_SECRET=your-client-secret
+STRIPE_API_KEY=your-stripe-api-key
+STRIPE_WEBHOOK_SECRET=your-stripe-webhook-secret
+POSTGRES_USER=your username
+POSTGRES_PASSWORD=your password
+POSTGRES_DB=your db
 ````
 
 ## Manage the frontend
